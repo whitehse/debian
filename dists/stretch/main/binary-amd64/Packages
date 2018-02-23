@@ -1,0 +1,147 @@
+Package: frr
+Version: 3.0.3-1~debian9+1
+Architecture: amd64
+Maintainer: Nobody <nobody@frrouting.org>
+Installed-Size: 7769
+Pre-Depends: adduser
+Depends: libc-ares2 (>= 1.7.0), libc6 (>= 2.15), libcap2 (>= 1:2.10), libjson-c3 (>= 0.10), libpam0g (>= 0.99.7.1), libreadline7 (>= 6.0), libsystemd0, libtinfo5 (>= 6), logrotate (>= 3.2-11), iproute, init-system-helpers (>= 1.18~)
+Suggests: snmpd
+Conflicts: zebra, zebra-pj
+Replaces: zebra, zebra-pj
+Homepage: http://www.frrouting.org/
+Priority: optional
+Section: net
+Filename: pool/main/f/frr/frr_3.0.3-1~debian9+1_amd64.deb
+Size: 1896262
+SHA256: 173399c5a1b59289347551f33a6cb442cecea1fa4800e0281d1df730e4d31bd9
+SHA1: b70926340373e5c33158af3fdb7218a3e3d630eb
+MD5sum: bac465eae7dfcc4ab49fd69b3cb41cee
+Description: BGP/OSPF/RIP/RIPng/ISIS/PIM/LDP routing daemon forked from Quagga
+ FRR is free software which manages TCP/IP based routing protocols.
+ It supports BGP4, BGP4+, OSPFv2, OSPFv3, IS-IS, RIPv1, RIPv2, RIPng,
+ PIM and LDP as well as the IPv6 versions of these.
+ .
+ FRR is a fork of Quagga with an open community model. The main git
+ lives on https://github.com/frrouting/frr.git
+Original-Maintainer: <maintainers@frrouting.org>
+
+Package: frr-dbg
+Source: frr
+Version: 3.0.3-1~debian9+1
+Architecture: amd64
+Maintainer: Nobody <nobody@frrouting.org>
+Installed-Size: 14537
+Depends: frr (= 3.0.3-1~debian9+1)
+Homepage: http://www.frrouting.org/
+Priority: extra
+Section: debug
+Filename: pool/main/f/frr/frr-dbg_3.0.3-1~debian9+1_amd64.deb
+Size: 3545308
+SHA256: 0a5d8077b333035b98b35342cb3727415e9cca3837f6b0e84a3c2f486ed9c4a7
+SHA1: ae2a366c407e8aadce2fd59ab3d8feb02f5fcb2e
+MD5sum: 7c372fcf2f311d67b666f1f209efecad
+Description: BGP/OSPF/RIP/RIPng/ISIS/PIM/LDP routing daemon (debug symbols)
+ This package provides debugging symbols for all binary packages built
+ from frr source package. It's highly recommended to have this package
+ installed before reporting any FRR crashes to either FRR developers or
+ Debian package maintainers.
+Original-Maintainer: <maintainers@frrouting.org>
+
+Package: frr-doc
+Source: frr
+Version: 3.0.3-1~debian9+1
+Architecture: all
+Maintainer: Nobody <nobody@frrouting.org>
+Installed-Size: 703
+Suggests: frr
+Homepage: http://www.frrouting.org/
+Priority: optional
+Section: net
+Filename: pool/main/f/frr/frr-doc_3.0.3-1~debian9+1_all.deb
+Size: 548426
+SHA256: 662b399e72c38dc2442a15e6602fcb1732e312bf64607f6180f31ffb819e6199
+SHA1: 1a5541d2f6b58acf18252162e1e08496984543fa
+MD5sum: eef5faddf0dabe363a14f2e82c136b37
+Description: BGP/OSPF/RIP/RIPng/ISIS/PIM/LDP routing daemon (documentation)
+ This package includes info files for frr, a free software which manages
+ TCP/IP based routing protocols.  It supports BGP4, BGP4+, OSPFv2, OSPFv3,
+ IS-IS, RIPv1, RIPv2, RIPng, PIM and LDP as well as the IPv6 versions of these.
+Original-Maintainer: <maintainers@frrouting.org>
+
+Package: frr-pythontools
+Source: frr
+Version: 3.0.3-1~debian9+1
+Architecture: all
+Maintainer: Nobody <nobody@frrouting.org>
+Installed-Size: 74
+Depends: frr (= 3.0.3-1~debian9+1), python (>= 2.7), python-ipaddr
+Homepage: http://www.frrouting.org/
+Priority: optional
+Section: net
+Filename: pool/main/f/frr/frr-pythontools_3.0.3-1~debian9+1_all.deb
+Size: 28452
+SHA256: e0e480fd98f1a25c244e464288034a8231fe2ab9c774b5497bbb3356144ea3b7
+SHA1: 645eaf5ff5c7abdbc0f6d2dc685091f353b0ff6b
+MD5sum: 071f46bc152876cdb96030c27392bf94
+Description: BGP/OSPF/RIP/RIPng/ISIS/PIM/LDP routing daemon (Python Tools)
+ This package includes info files for frr, a free software which manages
+ TCP/IP based routing protocols.  It supports BGP4, BGP4+, OSPFv2, OSPFv3,
+ IS-IS, RIPv1, RIPv2, RIPng, PIM and LDP as well as the IPv6 versions of these.
+Original-Maintainer: <maintainers@frrouting.org>
+
+Package: libptm-dev
+Source: ptm
+Version: 3.0-2
+Architecture: amd64
+Maintainer: kanna rajagopal <kanna@cumulusnetworks.com>
+Installed-Size: 91
+Priority: extra
+Section: libdevel
+Filename: pool/main/p/ptm/libptm-dev_3.0-2_amd64.deb
+Size: 21382
+SHA256: bcb9c74abcded29be97a24602b0407da0a6024425241495ea654a11a51427151
+SHA1: c1cd8a4cded31d1085077c7a2d217612dbab8ed1
+MD5sum: 684aa796b187448b88c94d2fcd12de44
+Description: Prespective Topology Manager library - development files
+ This package contains APIs needed by clients to interfaces with ptmd.
+
+Package: ptmd
+Source: ptm
+Version: 3.0-2
+Architecture: amd64
+Maintainer: kanna rajagopal <kanna@cumulusnetworks.com>
+Installed-Size: 619
+Depends: libcgraph6, lldpd (>= 0.7.16), libc6 (>= 2.14), init-system-helpers (>= 1.18~)
+Priority: extra
+Section: net
+Filename: pool/main/p/ptm/ptmd_3.0-2_amd64.deb
+Size: 162010
+SHA256: 1fd256a880c7588b8c659c900b9d398e81cbf2653a8d88419915240a133d9344
+SHA1: 094b0f1625f6024c22be5e11e060f4bca2fedef1
+MD5sum: 82a385d3de38f4cfb6413d5d9b854b1f
+Description: Prescriptive Topology Manager Daemon
+ This daemon verifies that the node it runs on is connected correctly
+ to its neighbors. Using a network graph specification in Graphviz's
+ DOT language, this ptmd determines the expected connectivity of the
+ node it is running on, verifies the expected connectivity with the
+ actual connectivity using lldpd and notifies the relevant clients of
+ the pass/fail status of the connectivity check for each port.
+ The daemon also supports Bi-directional forwarding detection for
+ singlehop and multihop sessions. BFD sessions can be started via
+ topology file and client API.
+
+Package: slapd-nssov
+Version: 2.4.45
+Maintainer: Dan White <dwhite@cafedemocracy.org>
+Architecture: amd64
+Priority: optional
+Section: net
+Filename: pool/main/s/slapd-nssov/slapd-nssov_2.4.45_amd64.deb
+Size: 118032
+SHA256: 7102161de5ea10dfcf7fe4f3e06125888e3efae45d2fc863adef3b3124e6c5d0
+SHA1: 94ac4bf8270bcc5e8a723ea8f4a6c5c66f5a5ad5
+MD5sum: 5b1447a0a100aadf2750d529bc5d5afd
+Description: OpenLDAP nssov overlay
+ This package contain nssov, which is an overlay which performs
+ NSS lookup requests through a local Unix Domain socket.
+

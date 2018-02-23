@@ -1,0 +1,5 @@
+Component: main
+Origin: deb.cafedemocracy.org
+Label: deb.cafedemocracy.org
+Architecture: amd64
+Description: Apt repository for frrouting and ptmd

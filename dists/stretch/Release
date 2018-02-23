@@ -1,0 +1,19 @@
+Origin: deb.cafedemocracy.org
+Label: deb.cafedemocracy.org
+Codename: stretch
+Date: Mon, 12 Feb 2018 19:37:01 UTC
+Architectures: amd64
+Components: main
+Description: Apt repository for frrouting and ptmd
+MD5Sum:
+ 3cf1f31b355c925c960ac5989dcff47a 5885 main/binary-amd64/Packages
+ c969ade8d5a42828a52818b9a4f3e2d7 2310 main/binary-amd64/Packages.gz
+ 1e47de5c11483374ed514f1105a980b9 146 main/binary-amd64/Release
+SHA1:
+ aca4eab57962d0dfe2dedb265805bbf71b235b74 5885 main/binary-amd64/Packages
+ eb02788a31c4f69bd9753d55612def68fcd5f5d5 2310 main/binary-amd64/Packages.gz
+ a74d466d200d64f9ae77049661957094c83538cb 146 main/binary-amd64/Release
+SHA256:
+ 652b6900bba66f7a0fd66fa315b8b1e4e8d51813d0ae1f7c54284ba1db5cbf17 5885 main/binary-amd64/Packages
+ d4b56e0bd8415f5123914c59db5ef306290e3a65fbe5aeb955e617e28f6152cb 2310 main/binary-amd64/Packages.gz
+ dab17011b76d7ffff08fe64bfb83508d2bbe03f4dfbaf78349d37556642127c2 146 main/binary-amd64/Release
